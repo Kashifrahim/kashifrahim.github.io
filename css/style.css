@@ -169,12 +169,42 @@ h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
+.hoverme:hover .pop{
+    background: rgba(#f6f6f6, .3);
+      opacity: 1;
+      width: 200px;
+      height: 200px;
 
+}
+.hoverme:hover{
+    transform: scale(1.1);
+  transition: all ease 500ms;
+
+}
+.pop {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background: #ffffff;
+    border-radius: 100%;
+    z-index: 1;
+    margin: auto;
+  transition: all .3s ease;
+  position: absolute;
+}
+.pop p {
+    color: #353535;
+    font-size: 20px;
+  }
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
-  background-size: cover;
+   background: linear-gradient(to bottom right, #38761d 50%, transparent 50.5%) no-repeat bottom, /* bottom part */ linear-gradient(0deg, #38761d, #133106) no-repeat top;
+    color: white;
+    padding-bottom: 3em;
+    background-size: 100% 7em, 100% calc(100% - 7em);
+ /* background: url("../img/intro-bg.png") center bottom no-repeat;
+  background-size: cover;*/
   padding: 200px 0 120px 0;
 }
 
@@ -263,7 +293,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #004289;
+  color: #042300;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -632,7 +662,7 @@ h6 {
   font-size: 18px;
 }
 .tech-item__img{
-  
+      width: 60%;
 }
 #services .title a {
   color: #111;
